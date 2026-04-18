@@ -14,7 +14,7 @@ body {
 
 /* HERO */
 .hero {
-    background: url('../photo-1599058917212-d750089bc07e.jpg') no-repeat center;
+    background:  image(gym.jpg) no-repeat center;
     background-size: cover;
     height: 100vh;
     position: relative;

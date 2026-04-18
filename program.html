@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+      <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold" href="#">
+      <i class="fa-solid fa-dumbbell"></i> GYM KU
+    </a>
+
+    <!-- Tombol Hamburger -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto ">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fa-solid fa-house"></i> Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="program.html">
+            <i class="fa-solid fa-fire"></i> Program
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="membership.html">
+            <i class="fa-solid fa-id-card"></i> Membership
+          </a>
+        </li>
+
+         <li class="nav-item">
+          <a class="nav-link" href="fasilitas.html">
+            <i class="fa-solid fa-building"></i> Fasilitas Gym
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="kontak.html">
+            <i class="fa-solid fa-phone"></i> Kontak
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+
+<section class="section text-center">
+    <div class="container">
+        <h2 class="fw-bold mb-4"data-aos="fade-up" data-aos-delay="50">Program Latihan</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card p-3">
+                    <h4>Weight Training</h4>
+                    <p>Membangun otot & kekuatan</p>
+                </div>
+            </div>
+            <div class="col-md-4"data-aos="fade-up" data-aos-delay="400">
+                <div class="card p-3">
+                    <h4>Cardio</h4>
+                    <p>Membakar lemak lebih cepat</p>
+                </div>
+            </div>
+            <div class="col-md-4"data-aos="fade-up" data-aos-delay="600">
+                <div class="card p-3">
+                    <h4>Yoga</h4>
+                    <p>Relaksasi & fleksibilitas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="program-section text-center">
+  <div class="container">
+    <h2 class="mb-5"data-aos="fade-up" data-aos-delay="50">Join Latihan</h2>
+
+    <div class="row">
+
+      <!-- MUSCLE -->
+      <div class="col-md-4 mb-4"data-aos="fade-up" data-aos-delay="200">
+        <div class="program-box">
+          <h4>💪 Muscle Gain</h4>
+          <p>Membentuk otot & massa tubuh</p>
+
+          <p>Durasi: 8 Minggu</p>
+          <p>Level: Beginner</p>
+          <p>Trainer: Andi</p>
+
+          <h5>Rp 300K</h5>
+
+          <button class="btn btn-danger"
+            data-bs-toggle="modal"
+            data-bs-target="#joinModal"
+            onclick="setProgram('Muscle Gain')">
+            Join Program
+          </button>
+        </div>
+      </div>
+
+      <!-- FAT LOSS -->
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="program-box">
+          <small>🔥 Popular</small>
+          <h4>🔥 Fat Loss</h4>
+          <p>Turunkan berat badan cepat</p>
+
+          <p>Durasi: 6 Minggu</p>
+          <p>Level: All Level</p>
+          <p>Trainer: Budi</p>
+
+          <h5>Rp 250K</h5>
+
+          <button class="btn btn-danger"
+            data-bs-toggle="modal"
+            data-bs-target="#joinModal"
+            onclick="setProgram('Fat Loss')">
+            Join Program
+          </button>
+        </div>
+      </div>
+
+      <!-- YOGA -->
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+        <div class="program-box">
+          <h4>🧘 Yoga</h4>
+          <p>Relaksasi & fleksibilitas</p>
+
+          <p>Durasi: 4 Minggu</p>
+          <p>Level: Beginner</p>
+          <p>Trainer: Siti</p>
+
+          <h5>Rp 200K</h5>
+
+          <button class="btn btn-danger"
+            data-bs-toggle="modal"
+            data-bs-target="#joinModal"
+            onclick="setProgram('Yoga')">
+            Join Program
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MODAL FORM -->
+<div class="modal fade" id="joinModal">
+  <div class="modal-dialog">
+    <div class="modal-content p-4">
+
+      <h4 class="text-center mb-3">Daftar Program</h4>
+
+      <form>
+        <input type="text" class="form-control mb-2" placeholder="Nama">
+        <input type="email" class="form-control mb-2" placeholder="Email">
+        <input type="text" class="form-control mb-2" placeholder="No HP">
+
+        
+        <button class="btn btn-danger w-100">Daftar</button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<section class="program-section text-center">
+  <div class="container">
+    <h2 class="mb-5"data-aos="fade-up" data-aos-delay="50">Detail Program Latihan</h2>
+
+    <div class="row">
+
+      <!-- MUSCLE GAIN -->
+       <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="info-card">
+          <h4>💪 Muscle Gain</h4>
+
+          <h6>🎯 Target</h6>
+          <p>Naik massa otot 3-5kg</p>
+
+          <h6>📅 Jadwal</h6>
+          <p>Senin - Jumat (17:00 - 19:00)</p>
+
+          <p>⏱ Durasi: 8 Minggu</p>
+          <p>👨‍🏫 Trainer: Andi</p>
+        </div>
+      </div>
+
+      <!-- FAT LOSS -->
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="info-card">
+          <h4>🔥 Fat Loss</h4>
+
+          <h6>🎯 Target</h6>
+          <p>Turun 4-7kg dalam 1 bulan</p>
+
+          <h6>📅 Jadwal</h6>
+          <p>Senin - Sabtu (16:00 - 18:00)</p>
+
+          <p>⏱ Durasi: 6 Minggu</p>
+          <p>👨‍🏫 Trainer: Budi</p>
+        </div>
+      </div>
+
+      <!-- YOGA -->
+      <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="600">
+        <div class="info-card">
+          <h4>🧘 Yoga</h4>
+
+          <h6>🎯 Target</h6>
+          <p>Tubuh lebih fleksibel & rileks</p>
+
+          <h6>📅 Jadwal</h6>
+          <p>Selasa & Kamis (08:00 - 10:00)</p>
+
+          <p>⏱ Durasi: 4 Minggu</p>
+          <p>👩‍🏫 Trainer: Siti</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+<script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

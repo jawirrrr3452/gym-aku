@@ -485,3 +485,67 @@ footer {
 .facility-card h5 {
     color: #fff;
 }
+
+/* SECTION membership*/
+.membership-section {
+    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    padding: 80px 0;
+    color: white;
+}
+
+/* CARD */
+.member-card {
+    background: #1c1c1c;
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.3s;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+}
+
+.member-card.popular {
+    border: 1px solid red;
+    transform: scale(1.05);
+}
+
+.badge-popular {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+.member-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.member-card ul li {
+    margin: 10px 0;
+    color: #ccc;
+}
+
+.member-card h2 {
+    color: red;
+}
+
+/* MODAL */
+.modal-content input {
+    background: white;
+    border: none;
+    color: white;
+}
+
+.modal-content input:focus {
+    border: 1px solid red;
+    box-shadow: none;
+}
